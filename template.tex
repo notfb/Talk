@@ -1,0 +1,114 @@
+%
+% This is NOT my work - Florian Thiel ( http://github.com/noroute ) gave
+% this to me, kind as he is. :-)
+%
+\documentclass{beamer}
+\mode<presentation>
+{
+  \usetheme{Singapore}
+  % oder ...
+  \usecolortheme{lily}
+  \setbeamercovered{transparent}
+  % oder auch nicht
+}
+
+\usepackage[german]{babel}
+% oder was auch immer
+
+\usepackage[latin1]{inputenc}
+% oder was auch immer
+
+\usepackage{listings}
+\usepackage{graphicx}
+
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Oder was auch immer. Zu beachten ist, das Font und Encoding passen
+% müssen. Falls T1 nicht funktioniert, kann man versuchen, die Zeile
+% mit fontenc zu löschen.
+
+\usepackage{url}
+
+\title[InFUtalks]{InFU Talks and Workshops}
+
+%\subtitle
+%{} % (optional)
+
+\author{Joe User}
+
+\date%[Kurzversion des Anlass] % (optional)
+{\today}
+
+\subject{InFUtalking}
+% Dies wird lediglich in den PDF Informationskatalog einfügt. Kann gut
+% weggelassen werden.
+
+
+% Falls eine Logodatei namens "university-logo-filename.xxx" vorhanden
+% ist, wobei xxx ein von latex bzw. pdflatex lesbares Graphikformat
+% ist, so kann man wie folgt ein Logo einfügen:
+
+\pgfdeclareimage[width=3cm]{logo}{images/InFUtalks_Logo}
+\logo{\pgfuseimage{logo}}
+
+% Folgendes sollte gelöscht werden, wenn man nicht am Anfang jedes
+% Unterabschnitts die Gliederung nochmal sehen möchte.
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>
+    \frametitle{Gliederung}
+    \tableofcontents[current,currentsection]
+  \end{frame}
+}
+
+% Falls Aufzählungen immer schrittweise gezeigt werden sollen, kann
+% folgendes Kommando benutzt werden:
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Gliederung}
+  \tableofcontents
+\end{frame}
+
+\section{Einleitung}
+
+\begin{frame}
+  \frametitle{Einleitung}
+  \begin{itemize}
+   \item 1
+   \item 2
+   \item 3
+  \end{itemize}
+\end{frame}
+
+\section{Wichtiges}
+\begin{frame}
+  \frametitle{Wichtig}
+  \begin{itemize}
+   \item 1
+   \item 2
+   \item 3
+  \end{itemize}
+\end{frame}
+
+\section{Zusammenfassung}
+\begin{frame}
+  \frametitle{Zusammenfassung}
+  \begin{itemize}
+   \item 1
+   \item 2
+   \item 3
+  \end{itemize}
+\end{frame}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
