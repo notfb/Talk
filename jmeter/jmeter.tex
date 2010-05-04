@@ -35,7 +35,7 @@
 \author{Fabian Bieker}
 
 \date%[Kurzversion des Anlass] % (optional)
-{26. Januar 2010}
+{05. Mai 2010}
 %{\today}
 
 \subject{Apache JMeter}
@@ -47,8 +47,8 @@
 % ist, wobei xxx ein von latex bzw. pdflatex lesbares Graphikformat
 % ist, so kann man wie folgt ein Logo einfügen:
 
-%\pgfdeclareimage[width=3cm]{logo}{b4f_logo}
-%\logo{\pgfuseimage{logo}}
+\pgfdeclareimage[width=2cm]{logo}{logo/logoBeagle}
+\logo{\pgfuseimage{logo}}
 
 % Folgendes sollte gelöscht werden, wenn man nicht am Anfang jedes
 % Unterabschnitts die Gliederung nochmal sehen möchte.
@@ -72,8 +72,28 @@
   \titlepage
   \begin{figure}
     \centering
-    \includegraphics[scale=0.6]{screen/jmeterLogo.eps}	  
+    \includegraphics[scale=0.6]{screen/jmeterLogo.eps}
   \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{JMeter}
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.26]{screen/studi-simple.eps}	  
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \begin{figure}
+%    \centering
+    \includegraphics[scale=0.10]{logo/cc.ps}	  
+  \end{figure}
+  \center{\bf{Folien unter \url{http://github.com/notfb/Talk/}}}
+\end{frame}
+
+\begin{frame}
+\center{\bf{Fragen? Dann fragt ...}}
 \end{frame}
 
 \begin{frame}
@@ -81,9 +101,7 @@
   \tableofcontents
 \end{frame}
 
-\begin{frame}
-\center{\bf{Fragen? Dann fragt ...}}
-\end{frame}
+\section{Einleitung}
 
 \begin{frame}
   \frametitle{Einleitung}
@@ -102,6 +120,25 @@
 \begin{frame}
   \frametitle{Grundlagen Lasttests}
   \begin{itemize}
+   \item Setup aufwändig
+   \item Iterativer Lernprozess
+   \item Last langsam erhöhen
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Auswertung von Lasttests}
+  \begin{itemize}
+   \item Was wollen wir testen? \pause
+   \item Welche Metriken sind sinnvoll?
+   \item Wie bewerten wir die Metriken?
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Metriken - Lastgenerator}
+  \begin{itemize}
    \item Latenz \& Antwortzeit
    \item Durchsatz
    \item Standardabweichung (Jitter)
@@ -110,13 +147,21 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Grundlagen Lasttests}
-	s. ``Release It'' - Chap. 8
+  \frametitle{Metriken - Applikation}
+  \begin{itemize}
+   \item Profiler
+   \item Applikations-Monitoring
+   \item Logfiles
+   \item Exceptions, Core-dumps, usw.
+  \end{itemize}
 \end{frame}
 
+
 \begin{frame}
-Stellt JMeter auf englisch um (``Optionen''). Die deutsche Lokalisierung ist
-unerträglich.
+	``Release It!: Design and Deploy Production-Ready Software''\\
+	Kapitel 8\\
+	(Pragmatic Programmers)\\
+	ISBN-13: 978-0978739218
 \end{frame}
 
 \begin{frame}
@@ -140,6 +185,10 @@ unerträglich.
   \end{itemize}
 \end{frame}
 
+\begin{frame}
+Stellt JMeter auf englisch um (``Optionen''). Die deutsche Lokalisierung ist
+unerträglich.
+\end{frame}
 
 \section{Simpler HTTP-Testplan}
 \begin{frame}
